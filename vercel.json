@@ -1,7 +1,7 @@
 {
     "rewrites": [
         {
-            "source": "/api/:path*",
+            "source": "/proxy/:path*",
             "destination": "http://eventmaster-api-prod.eba-fncd4gax.us-east-1.elasticbeanstalk.com/api/:path*"
         }
     ]

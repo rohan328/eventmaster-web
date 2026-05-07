@@ -1,0 +1,256 @@
+.searchBarBlock {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.topBar {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.categoryFilters {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  overflow-x: auto;
+  padding-bottom: 0.15rem;
+  position: relative;
+}
+
+.categoryButton {
+  border: 1px solid #d8dbe7;
+  background: #ffffff;
+  color: #2b2d3a;
+  border-radius: 999px;
+  height: 2rem;
+  padding: 0 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.categoryButton:hover {
+  border-color: #c5c9d6;
+}
+
+.categoryButtonActive {
+  border-color: #11131c;
+  background: #11131c;
+  color: #ffffff;
+}
+
+.dateFilterWrap {
+  position: relative;
+}
+
+.dateModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 19, 28, 0.35);
+  display: grid;
+  place-items: center;
+  /* Leaflet panes use z-index up to ~700; stay above map tiles on event cards */
+  z-index: 5000;
+  padding: 1rem;
+}
+
+.dateModal {
+  width: min(420px, 100%);
+  border: 1px solid #d8dbe7;
+  background: #ffffff;
+  border-radius: 0.9rem;
+  box-shadow: 0 12px 30px rgba(16, 20, 40, 0.2);
+  padding: 1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.dateModalTitle {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1f2331;
+}
+
+.dateField {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  color: #6f7283;
+  font-weight: 600;
+}
+
+.dateField input {
+  height: 2rem;
+  border-radius: 0.45rem;
+  border: 1px solid #d8dbe7;
+  background: #ffffff;
+  color: #1f2331;
+  color-scheme: light;
+  opacity: 1;
+  padding: 0 0.5rem;
+  font-size: 0.82rem;
+}
+
+.dateField input::-webkit-calendar-picker-indicator {
+  filter: none;
+  opacity: 1;
+}
+
+.clearDateButton {
+  height: 2rem;
+  border-radius: 0.45rem;
+  border: 1px solid #d8dbe7;
+  background: #ffffff;
+  color: #2b2d3a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dateModalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.dateSecondaryButton {
+  height: 2rem;
+  border-radius: 0.45rem;
+  border: 1px solid #d8dbe7;
+  background: #ffffff;
+  color: #2b2d3a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0 0.7rem;
+}
+
+.datePrimaryButton {
+  height: 2rem;
+  border-radius: 0.45rem;
+  border: 1px solid #11131c;
+  background: #11131c;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0 0.7rem;
+}
+
+.searchInput {
+  height: 3rem;
+  border-radius: 999px;
+  border: 1px solid #e5e5ed;
+  background: #ffffff;
+  color: #22232a;
+  font-size: 0.92rem;
+  padding: 0 1.1rem;
+}
+
+.searchInput::placeholder {
+  color: #9696a3;
+}
+
+.profileButton {
+  height: 3rem;
+  border-radius: 999px;
+  border: none;
+  padding: 0 1rem;
+  background: #11131c;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  cursor: pointer;
+}
+
+.profileDropdown {
+  position: relative;
+  justify-self: end;
+}
+
+.chevron {
+  display: inline-flex;
+  width: .375rem;
+  height: .375rem;
+  background: #fff;
+  border-radius: .375rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  width: 220px;
+  border-radius: 1.1rem;
+  background: #ececef;
+  border: 1px solid #e0e0e8;
+  box-shadow: 0 10px 24px rgba(13, 16, 28, 0.12);
+  padding: 0.65rem;
+  z-index: 20;
+}
+
+.menuItem {
+  width: 100%;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  border-radius: 0.65rem;
+  padding: 0.55rem 0.65rem;
+  color: #2e313d;
+  font-size: 1.03rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  background: #e4e4eb;
+}
+
+.settingsItem {
+  color: #8053ff;
+}
+
+.menuIcon {
+  width: 1rem;
+  height: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .topBar {
+    grid-template-columns: 1fr;
+  }
+
+  .profileDropdown {
+    justify-self: stretch;
+  }
+
+  .profileButton {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .dropdownMenu {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}

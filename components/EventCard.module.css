@@ -1,0 +1,124 @@
+.card {
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1px solid #e6e6ee;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(16, 20, 40, 0.05);
+}
+
+.banner {
+  position: relative;
+  height: 10rem;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #b491ff, #b9a4f3);
+  overflow: hidden;
+}
+
+.bannerWithMap {
+  background: #e6e6ee;
+}
+
+.bannerMap {
+  position: absolute;
+  inset: 0;
+}
+
+.bannerMap :global(div) {
+  border-radius: 0;
+}
+
+.dateBox {
+  position: relative;
+  z-index: 1;
+  width: 2.4rem;
+  border-radius: 0.45rem;
+  background: rgba(89, 57, 140, 0.24);
+  padding: 0.25rem 0.2rem;
+  text-align: center;
+  color: #24153c;
+}
+
+.dateMonth {
+  display: block;
+  font-size: 0.64rem;
+  font-weight: 700;
+}
+
+.dateDay {
+  display: block;
+  font-size: 1.35rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.content {
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tag {
+  border-radius: 999px;
+  padding: 0.28rem 0.58rem;
+  background: #ececf3;
+  color: #4a4c58;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.tagCategory {
+  background: #ede8fb;
+  color: #4a3d7a;
+}
+
+.statusPublished {
+  background: #d7f2db;
+  color: #276431;
+}
+
+.statusDraft {
+  background: #ececf3;
+  color: #4a4c58;
+}
+
+.statusCancelled {
+  background: #f8dcdf;
+  color: #8f3d4a;
+}
+
+.title {
+  margin-top: 0.7rem;
+  color: #1f212a;
+  font-size: 1.48rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.description {
+  margin: 0.45rem 0 0;
+  color: #5c5f6a;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.schedule {
+  margin: 0.55rem 0 0;
+  color: #3d4050;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.organizer {
+  margin: 0.35rem 0 0;
+  color: #7a7d8a;
+  font-size: 0.76rem;
+  font-weight: 500;
+}

@@ -1,0 +1,294 @@
+.createEventLayout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  background: #f8f8fb;
+}
+
+.content {
+  padding: 2rem 2.75rem;
+}
+
+.headerSection {
+  margin: 2rem 0 1.15rem;
+}
+
+.title {
+  margin: 0;
+  color: #1e2028;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 0.55rem 0 0;
+  color: #6e7182;
+  max-width: 48rem;
+}
+
+.bannerError {
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.72rem;
+  background: #fff1f1;
+  color: #8a1f1f;
+  font-size: 0.92rem;
+}
+
+.bannerSuccess {
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.72rem;
+  background: #ecfdf3;
+  color: #166534;
+  font-size: 0.92rem;
+}
+
+.inlineLink {
+  color: #166534;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.gridFull {
+  grid-column: 1 / -1;
+}
+
+.fieldError {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #b42318;
+}
+
+.locationHint {
+  font-size: 0.78rem;
+  color: #5e6274;
+  font-weight: 500;
+}
+
+.locationSuggestions {
+  margin-top: 0.2rem;
+  border: 1px solid #e3e3eb;
+  border-radius: 0.72rem;
+  overflow: hidden;
+  background: #fff;
+  max-height: 11rem;
+  overflow-y: auto;
+}
+
+.locationSuggestionButton {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #f1f1f5;
+  background: #fff;
+  padding: 0.55rem 0.7rem;
+  text-align: left;
+  color: #2b2d3a;
+  font-size: 0.84rem;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.locationSuggestionButton:first-child {
+  border-top: 0;
+}
+
+.locationSuggestionButton:hover {
+  background: #f7f6fc;
+}
+
+.checkboxField {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #2d3140;
+  font-weight: 600;
+}
+
+.checkboxField input {
+  width: 1rem;
+  height: 1rem;
+}
+
+.scheduleSection {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.scheduleHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.scheduleTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2d3140;
+}
+
+.scheduleHint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #707484;
+}
+
+.addSlotButton,
+.removeSlotButton {
+  border: 1px solid #d8dbe7;
+  border-radius: 0.65rem;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: #ffffff;
+  color: #2b2d3a;
+  cursor: pointer;
+}
+
+.addSlotButton:hover,
+.removeSlotButton:hover {
+  border-color: #9b9eaf;
+}
+
+.scheduleRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 0.65rem;
+  align-items: end;
+  padding: 0.75rem 0;
+  border-top: 1px solid #ececf3;
+}
+
+.scheduleRow .removeSlotButton {
+  height: 2.7rem;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #e8e8ef;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(16, 20, 40, 0.05);
+  padding: 1.1rem 1.1rem 1.2rem;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1e2028;
+}
+
+.cardDescription {
+  margin: 0.35rem 0 1rem;
+  color: #707484;
+  font-size: 0.9rem;
+}
+
+.gridTwo {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 0.85rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+  color: #2d3140;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.field input,
+.field select,
+.field textarea {
+  border: 1px solid #e3e3eb;
+  border-radius: 0.72rem;
+  padding: 0.7rem 0.82rem;
+  background: #ffffff;
+  color: #22232a;
+  font-size: 0.92rem;
+  font-family: inherit;
+}
+
+.field input,
+.field select {
+  height: 2.7rem;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 7.5rem;
+}
+
+.actions {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  height: 2.8rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0 1.3rem;
+  background: #11131c;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primaryButton:disabled {
+  cursor: default;
+  opacity: 0.72;
+}
+
+.secondaryButton {
+  height: 2.8rem;
+  border: 1px solid #d8dbe7;
+  border-radius: 999px;
+  padding: 0 1.3rem;
+  background: #ffffff;
+  color: #2b2d3a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.savedMessage {
+  margin: 0;
+  color: #2a6a36;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .createEventLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    padding: 1.25rem;
+  }
+
+  .gridTwo {
+    grid-template-columns: 1fr;
+  }
+
+  .scheduleRow {
+    grid-template-columns: 1fr;
+  }
+
+  .scheduleRow .removeSlotButton {
+    height: auto;
+    justify-self: start;
+  }
+}

@@ -1,0 +1,94 @@
+.dashboardLayout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  background: #f8f8fb;
+}
+
+.content {
+  padding: 2rem 2.75rem;
+}
+
+.sectionTitle {
+  margin: 2rem 0 1rem;
+  color: #1e2028;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.recommendedGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+}
+
+.eventCardLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 1rem;
+}
+
+.eventCardLink:focus-visible {
+  outline: 2px solid #9b7fd9;
+  outline-offset: 3px;
+}
+
+.upcomingSection {
+  margin-top: 0.8rem;
+}
+
+.upcomingHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.viewAllButton {
+  border: none;
+  background: transparent;
+  color: #7d7e8c;
+  font-size: 0.9rem;
+}
+
+.upcomingGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 1.15rem;
+}
+
+.upcomingInlineMessage {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #6e7182;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.upcomingInlineMessage[role="alert"] {
+  color: #b42318;
+}
+
+@media (max-width: 1200px) {
+  .recommendedGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcomingGrid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboardLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    padding: 1.25rem;
+  }
+
+  .upcomingGrid {
+    grid-template-columns: 1fr;
+  }
+}

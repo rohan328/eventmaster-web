@@ -1,0 +1,27 @@
+.skeletonCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.skeletonPoster {
+  width: 100%;
+  aspect-ratio: 1.38;
+  border-radius: 0.9rem;
+  background: #dbdce2;
+}
+
+.skeletonLineLarge,
+.skeletonLineSmall {
+  height: 0.72rem;
+  border-radius: 999px;
+  background: #e8e8ee;
+}
+
+.skeletonLineLarge {
+  width: 90%;
+}
+
+.skeletonLineSmall {
+  width: 64%;
+}

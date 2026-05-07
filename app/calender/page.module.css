@@ -1,0 +1,353 @@
+.calendarLayout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  background: #f8f8fb;
+}
+
+.content {
+  padding: 2rem 2.75rem;
+}
+
+.headerSection {
+  margin: 2rem 0 1.1rem;
+}
+
+.title {
+  margin: 0;
+  color: #1e2028;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 0.55rem 0 0;
+  color: #6e7182;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.statCard {
+  border: 1px solid #e8e8ef;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(16, 20, 40, 0.05);
+  padding: 1rem 1.05rem;
+}
+
+.statLabel {
+  margin: 0;
+  color: #6f7283;
+  font-size: 0.84rem;
+}
+
+.statValue {
+  margin: 0.42rem 0 0;
+  color: #1f2331;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.integrationSection {
+  margin-top: 1rem;
+  border: 1px solid #e8e8ef;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(16, 20, 40, 0.05);
+  padding: 1rem 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sectionTitle {
+  margin: 0;
+  color: #202431;
+  font-size: 1.1rem;
+}
+
+.sectionText {
+  margin: 0.45rem 0 0;
+  color: #626779;
+  font-size: 0.92rem;
+}
+
+.integrationActions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  height: 2.45rem;
+  border-radius: 999px;
+  padding: 0 1rem;
+  font-weight: 600;
+  font-size: 0.84rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primaryButton {
+  border: none;
+  background: #12141d;
+  color: #ffffff;
+}
+
+.secondaryButton {
+  border: 1px solid #d7dbe8;
+  background: #ffffff;
+  color: #2b2d3a;
+}
+
+.mainGrid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: minmax(420px, 1fr) minmax(340px, 1fr);
+  gap: 1rem;
+}
+
+.monthCard,
+.savedEventsCard,
+.embedSection {
+  border: 1px solid #e8e8ef;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(16, 20, 40, 0.05);
+  padding: 1rem 1.1rem;
+}
+
+.monthHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.monthNav {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.monthArrow {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d7dbe8;
+  background: #ffffff;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #2b2d3a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.monthArrow:hover {
+  background: #f4f5fa;
+}
+
+.monthHeaderAside {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.todayButton {
+  border: none;
+  background: none;
+  padding: 0.2rem 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #3a4d9e;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.todayButton:hover {
+  color: #2a3a7a;
+}
+
+.monthTitle {
+  margin: 0;
+  min-width: 9rem;
+  text-align: center;
+  color: #202431;
+  font-size: 1.15rem;
+}
+
+.legend {
+  margin: 0;
+  color: #676d80;
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legendDot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: #3a69ff;
+}
+
+.weekdays {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.35rem;
+}
+
+.weekdays p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6d7387;
+}
+
+.dayGrid {
+  margin-top: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.35rem;
+}
+
+.emptyCell,
+.dayCell {
+  min-height: 2.1rem;
+  border-radius: 0.55rem;
+}
+
+.dayCell {
+  border: 1px solid #edf0f8;
+  color: #27304a;
+  font-size: 0.87rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dayWithEvent {
+  background: #e8efff;
+  border-color: #cbd9ff;
+  color: #224dbd;
+  font-weight: 700;
+}
+
+.today {
+  box-shadow: inset 0 0 0 1px #2f4dcc;
+}
+
+.savedEventsCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.emptyState {
+  margin-top: 0.75rem;
+  color: #6b7082;
+  font-size: 0.9rem;
+}
+
+.eventList {
+  margin-top: 0.65rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.eventItem {
+  border: 1px solid #eceef6;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.eventTitle {
+  margin: 0;
+  color: #202431;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.eventMeta {
+  margin: 0.32rem 0 0;
+  color: #666d81;
+  font-size: 0.82rem;
+}
+
+.addButton {
+  border: 1px solid #d3d8ea;
+  border-radius: 999px;
+  padding: 0.42rem 0.7rem;
+  background: #ffffff;
+  color: #2b2d3a;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.errorText {
+  margin: 0.55rem 0 0;
+  color: #9c2620;
+  font-size: 0.84rem;
+}
+
+.successText {
+  margin: 0.55rem 0 0;
+  color: #186034;
+  font-size: 0.84rem;
+}
+
+.embedSection {
+  margin-top: 1rem;
+}
+
+.embed {
+  margin-top: 0.7rem;
+  width: 100%;
+  min-height: 480px;
+  border: 1px solid #eceef6;
+  border-radius: 0.8rem;
+}
+
+@media (max-width: 1100px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .calendarLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    padding: 1.25rem;
+  }
+
+  .statGrid {
+    grid-template-columns: 1fr;
+  }
+}

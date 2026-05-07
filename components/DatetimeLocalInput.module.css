@@ -1,0 +1,45 @@
+.wrap {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 2.6rem !important;
+  color-scheme: light;
+}
+
+/* Use our calendar button as the obvious control; keep native typing. */
+.input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.iconButton {
+  position: absolute;
+  top: 50%;
+  right: 0.35rem;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: none;
+  border-radius: 0.45rem;
+  background: transparent;
+  color: #5c5f70;
+  cursor: pointer;
+}
+
+.iconButton:hover {
+  background: #f0f1f6;
+  color: #11131c;
+}
+
+.iconButton:focus-visible {
+  outline: 2px solid #5b21b6;
+  outline-offset: 1px;
+}
